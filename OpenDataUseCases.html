@@ -12,7 +12,7 @@
 
       body {
         font-family: 'Montserrat';
-        font-size: 25px;
+        font-size: 20px;
         color: black;
         line-height: 1.7em;
       }
@@ -33,10 +33,11 @@
         display: inline-block;
         float: center;
       }
+
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; },
 
       @page {
-        size: 1210px 681px;
+        size: 1280px 720px;
         margin: 0;
       }
 
@@ -48,7 +49,7 @@
           top: 0 !important;
           left: 0 !important;
         }
-}
+      }
     </style>
   </head>
   <body>
@@ -66,11 +67,11 @@ April 19, 2017
 
 
 ???
-
+- Co-Lab lead at OK Lab Berlin,
 - Introduce myself: Political Science
 - quantitative focus
-- propensity scores
-- Co-Lab lead at OK Lab Berlin, spare time
+- propensity scores (Florian Wilhelm)
+- Open data: spare time
 - iRights e.V. (improving consumer protection for migrants/refugees)
 - Market research at FactWorks
 
@@ -83,7 +84,7 @@ April 19, 2017
 3. Election data
 4. Wikidata
 5. Public transport data
-6. Outlook
+6. How to get involved
 
 ---
 
@@ -110,15 +111,15 @@ April 19, 2017
 
 # 1. Introduction
 
-<b>Open Definition</b>, Open Knowledge Foundation, 2006:
-<blockquote><em>"Open data and content can be freely used, modified, and shared by anyone for any purpose."</em><br>
-<font size="4">Source: (<a href="http://opendefinition.org/" target="_blank" style="text-decoration:none">opendefinition.org</a>)</font></blockquote>
-<br>
 
-<b>Advantages of Open data</b>:
-- Transparency
-- Collaboration
-- Economy
+<br>
+<br>
+<br>
+<p align="center"><b><em><font size="15">"Open data and content can be freely used, modified, and shared by anyone for any purpose."</font></em></b><br>
+<font size="4">Source: (<a href="http://opendefinition.org/" target="_blank" style="text-decoration:none">opendefinition.org</a>)</font></blockquote>
+<br></p>
+
+
 
 ???
 
@@ -126,10 +127,11 @@ April 19, 2017
   - Open data and content can be freely used, modified, and shared by anyone for any purpose ("Open Definition 2006")
   - free license
   - machine-readable (no pdfs!)
+  - publisher: administrations, businesses, science, foundations
 
 - Advantages:
   - Transparency
-  - fosters collaboration between different parties
+  - Collaboration
   - Economic potential (KAS: economic potential = 41.3 billions, for Germany, yearly)
 
 - Types of data
@@ -138,12 +140,20 @@ April 19, 2017
   - Christmas markets
   - Real-estate data
 
+- Berlin: E- government law in 2016
+- Germany: Open Data Law: 2017?
+- Germany: Open Government Partnership
+
+
+---
+class: center, middle
+
+# 2. Measuring air quality
 
 ---
 
 # 2. Measuring air quality
 
-- Fine dust / particulates
 - PM10: particles with a diameter between 2.5 and 10 micrometres (μm)
 - EU on PM10:
   - Yearly average: 40 µg/m<sup>3</sup>
@@ -155,7 +165,6 @@ April 19, 2017
 
 
 ???
-- Research three facts
 - def: microscopic solid or liquid matter suspended in the Earth's atmosphere
 - increasing lung cancer rates or asthma
 - dependent on weather and geography
@@ -191,6 +200,18 @@ OK Lab Stuttgart / @codeforS</div>
 - Berlin: Fahrradfreundliches Neukölln, in cooperation with OK Lab Berlin
 
 ---
+class: center, middle
+# 3. Election data
+
+???
+- citizens need information, well prepared, good visualizations + intuitive apps
+- many data sets not open
+- some data available after paying for a disc
+- best source should be Ämter but they are not
+- partially not informative
+- Bundestagswahl September 2017
+
+---
 
 # 3. Election data
 
@@ -200,26 +221,22 @@ OK Lab Stuttgart / @codeforS</div>
 
 
 ???
-- best source should be Ämter but they are not
-- partially not informative
+
 - example: Saarland -> no downloads, no information on electoral system ...
-- many data sets not open
-- some data available after paying for a disc
-- Berlin 2016: information on how to vote available only simple language pdf (but better display + downloads)
 - large differences in the offerings of different Länder
 
 ---
 
 # 3. Election data
 
-###"Wahldaten"
+###Wahldaten
 
-- Bundestagswahl September 2017
 - make more data sets available
 - spotlight official websites + best practices
 - develop apps
 - "Wahlsalons"
-- Organizer: Code for Germany (<a href="https://codefor.de" target="_blank" style="text-decoration:none">www.codefor.de</a>)
+
+<img src="CFG_logo.png" style="width:557px;height:220px;">
 
 ???
 - bring together various interest groups: <br>
@@ -237,46 +254,46 @@ OK Lab Stuttgart / @codeforS</div>
 
 ???
 - another community project
--
+- Wikidata Datenobjekt
 
 ---
 
 # 4. Wikidata
 
-<img src="wikidata_berlin.png" style="width:576px;height:294px;">
+<img src="wikidata_berlin.png" style="width:720px;height:368px;">
 
 <div style="text-align:center">(Source: <a href="https://www.wikidata.org/wiki/Q64" target="_blank" style="text-decoration:none">www.wikidata.org/wiki/Q64</a>)</div>
 
-???
-- another community project
--
 
+???
+- Entry, linkage and usage
 
 ---
 
 # 4. Wikidata
 
-- Entry, linkage and usage
-- SPARQL-queries: <a href="https://query.wikidata.org/" target="_blank" style="text-decoration:none">www.query.wikidata.org</a>
-- building applications: <a href="http://stadt-land-wikidata.netlify.com/" target="_blank" style="text-decoration:none">www.stadt-land-wikidata.netlify.com</a>
+Query servicy: <a href="https://query.wikidata.org/" target="_blank" style="text-decoration:none">www.query.wikidata.org</a>
+
+<img src="mayors.png" style="width:719px;height:385px;">
+
 
 ???
 
-- Show Knuts Stadt Land Fluss
-- ask Lea for support
 - query directly via python with SPARQL and handle the data with python
+- building applications: <a href="http://stadt-land-wikidata.netlify.com/" target="_blank" style="text-decoration:none">www.stadt-land-wikidata.netlify.com</a>
+- https://inventaire.io/welcome
 
 ---
-
+class: center, middle
 # 5. Public transport data
 
+
+
+???
 - Public transport associations & schedules
 - GTFS
 - pdf
 - Google and who else?
-
-
-???
 
 - General Transit Feed Specification (GTFS)
 - little competition: less fitting apps
@@ -305,28 +322,16 @@ OK Lab Stuttgart / @codeforS</div>
 
 ---
 
-# 6. Outlook
-
-- Berlin: E- government law in 2016
-- Germany: Open Data Law: 2017?
-- Germany: Open Government Partnership
-
-???
-- institutional support
--
-
----
-
 # 6. How to get involved
 
+- Use Open data
+  - Berlin: <a href="https://daten.berlin.de/" target="_blank" style="text-decoration:none">www.daten.berlin.de</a>
+  - Germany: <a href="https://www.govdata.de/" target="_blank" style="text-decoration:none">www.govdata.de</a>
 - OK Lab Open Lab dates @Wikimedia (Hallesches Ufer)
   - May 8
   - June 12
   - www.meetup.com/OK-Lab-Berlin/
 - Frag den Staat: <a href="https://fragdenstaat.de/" target="_blank" style="text-decoration:none">www.fragdenstaat.de</a>
-- Use Open data
-  - Berlin: <a href="https://daten.berlin.de/" target="_blank" style="text-decoration:none">www.daten.berlin.de</a>
-  - Germany: <a href="https://www.govdata.de/" target="_blank" style="text-decoration:none">www.govdata.de</a>
 
 
 ???
@@ -341,7 +346,7 @@ ulrike.thalheim@gmail.com
 
 Twitter: @codeforbe and @didumdida
 
-Open source technologies used for this presentation: <br>
+Some open source technologies used for this presentation: <br>
 remark.js, Google fonts, Atom editor
 
 
